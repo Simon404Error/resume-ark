@@ -1,0 +1,80 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #1a1a2e;
+  color: #e4e4ef;
+  width: 320px;
+  min-height: 400px;
+}
+
+.popup-container { padding: 16px; }
+
+.popup-header { margin-bottom: 16px; }
+.popup-header h1 { font-size: 18px; font-weight: 700; }
+
+.loading { text-align: center; padding: 20px; color: #9494b8; font-size: 14px; }
+
+.status-section { margin-bottom: 12px; }
+
+.user-info {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 12px; background: #0f0f1a; border-radius: 8px;
+  margin-bottom: 12px; font-size: 14px;
+}
+
+.link-btn {
+  background: none; border: none; color: #9494b8; cursor: pointer;
+  font-size: 13px; text-decoration: underline;
+}
+.link-btn:hover { color: #ef4444; }
+
+.quick-actions {
+  display: flex; gap: 6px; margin-bottom: 16px;
+}
+
+.action-btn {
+  flex: 1; text-decoration: none; color: #e4e4ef;
+  background: #0f0f1a; border: 1px solid #2a2a44;
+  border-radius: 8px; padding: 12px 8px; text-align: center;
+  font-size: 12px; transition: all 0.2s;
+}
+.action-btn:hover { border-color: #4f46e5; background: rgba(79,70,229,0.1); }
+
+.section { margin-bottom: 16px; }
+.section-title { font-size: 12px; color: #9494b8; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+.page-status {
+  background: #0f0f1a; border-radius: 8px; padding: 12px;
+  font-size: 13px; color: #9494b8; text-align: center;
+}
+
+.setting-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8px 12px; background: #0f0f1a; border-radius: 8px;
+  font-size: 13px; cursor: pointer;
+}
+
+.setting-row select {
+  background: #1a1a2e; color: #e4e4ef; border: 1px solid #2a2a44;
+  border-radius: 6px; padding: 4px 8px; font-size: 12px; outline: none;
+}
+
+#login-prompt { text-align: center; padding: 40px 20px; }
+.login-text { margin-bottom: 12px; color: #9494b8; font-size: 14px; }
+
+.btn-primary {
+  display: inline-block; padding: 8px 24px;
+  background: #4f46e5; color: white; border-radius: 8px;
+  text-decoration: none; font-size: 14px; font-weight: 500;
+}
+.btn-primary:hover { background: #4338ca; }
+
+.popup-footer {
+  display: flex; justify-content: space-between;
+  padding-top: 12px; border-top: 1px solid #2a2a44;
+  font-size: 12px; color: #9494b8;
+}
+
+.popup-footer a { color: #818cf8; text-decoration: none; }
+.popup-footer a:hover { text-decoration: underline; }

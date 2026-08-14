@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "简历方舟 - AI 智能填简历",
+  "version": "1.0.0",
+  "description": "AI 自动识别并填写企业招聘官网的简历表单，一键投递，智能记忆",
+  "author": "resume-ark",
+  "homepage_url": "http://localhost:5173",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["src/content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/inject.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ]
+}

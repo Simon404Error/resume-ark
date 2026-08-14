@@ -1,0 +1,12 @@
+{
+  "name": "resume-ark",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI 智能填写网申简历 + 校招汇总表",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:web": "cd web && npm run dev",
+    "build:extension": "cd extension && npm run build",
+    "install:all": "cd server && npm install && cd ../web && npm install && cd ../extension && npm install"
+  }
+}

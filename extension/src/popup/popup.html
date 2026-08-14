@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>简历方舟</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>⚓ 简历方舟</h1>
+    </header>
+
+    <div id="login-status" class="status-section">
+      <div class="loading">检查登录状态...</div>
+    </div>
+
+    <div id="main-content" style="display:none;">
+      <!-- 用户信息 -->
+      <div class="user-info" id="user-info">
+        <span id="user-name"></span>
+        <button id="btn-logout" class="link-btn">退出</button>
+      </div>
+
+      <!-- 快速操作 -->
+      <div class="quick-actions">
+        <a href="http://localhost:5173/campus" target="_blank" class="action-btn">
+          📊 校招汇总
+        </a>
+        <a href="http://localhost:5173/resume" target="_blank" class="action-btn">
+          📄 简历管理
+        </a>
+        <a href="http://localhost:5173/applications" target="_blank" class="action-btn">
+          📋 投递记录
+        </a>
+      </div>
+
+      <!-- 当前页面 -->
+      <div class="section">
+        <div class="section-title">当前页面</div>
+        <div id="page-status" class="page-status">
+          检测页面中...
+        </div>
+      </div>
+
+      <!-- 设置 -->
+      <div class="section">
+        <div class="section-title">设置</div>
+        <label class="setting-row">
+          <span>浮动按钮</span>
+          <select id="float-mode">
+            <option value="auto">自动</option>
+            <option value="always">常驻</option>
+            <option value="hidden">隐藏</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div id="login-prompt" style="display:none;">
+      <p class="login-text">请登录以使用全部功能</p>
+      <a href="http://localhost:5173/login" target="_blank" class="btn-primary">前往登录</a>
+    </div>
+
+    <footer class="popup-footer">
+      <span>v1.0.0</span>
+      <a href="http://localhost:5173" target="_blank">官网</a>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
