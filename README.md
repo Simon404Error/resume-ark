@@ -1,15 +1,12 @@
 # ⚓ 简历方舟 (Resume Ark)
 
+> **⚠️ 留档，以后有机会再完善**
 > **⚠️ 声明：这仅是一具空壳，不具备实际用途。**
 >
-> 本项目是仿照 [求职方舟](https://www.qiuzhifangzhou.com) 的 AI 填简历和校招汇总表功能搭建的**项目骨架**，仅用于展示结构设计，**不能直接运行使用**。
->
-> - ❌ 未接入真实 AI API（需自行配置 DeepSeek Key）
-> - ❌ 浏览器扩展未签名，无法在商店发布
-> - ❌ 校招数据仅为示例，非实时更新
+> - ❌ 未接入真实 AI API
+> - ❌ 浏览器扩展未签名
+> - ❌ 校招数据仅为示例
 > - ❌ 简历解析仅支持纯文本格式
->
-> **恳请各位大佬 fork 并完善！** 如果你有兴趣，欢迎 PR 任何改进。
 
 ---
 
@@ -56,8 +53,6 @@ resume-ark/
 | 前端 | Vue 3 + Vite + Pinia + Vue Router |
 | 后端 | Node.js + Express + TypeScript |
 | 数据库 | SQLite (sql.js WASM) |
-| AI | DeepSeek API（需自行配置） |
-| 扩展 | Chrome Extension Manifest V3 |
 
 ## 快速开始
 
@@ -85,16 +80,6 @@ cd web && npm run dev
 1. 打开 Chrome/Edge，访问 `chrome://extensions`
 2. 开启「开发者模式」
 3. 点击「加载已解压的扩展」，选择 `extension/` 目录
-
-## 待完善清单
-
-- [ ] 接入真实 AI API（DeepSeek / OpenAI）
-- [ ] PDF/Word 简历完整解析
-- [ ] 浏览器扩展商店发布与自动更新
-- [ ] 校招数据实时爬取与自动更新
-- [ ] 更多公司官网表单的适配
-- [ ] 简历美化模板与多格式导出
-- [ ] 用户反馈与字段纠错机制
 
 ## License
 
